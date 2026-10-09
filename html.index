@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aachal Wani | Portfolio & Digital Resume</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --accent-color: #fb7185;
+            --accent-gradient: linear-gradient(135deg, #f43f5e 0%, #fb7185 100%);
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --border-color: #334155;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.7;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        /* Hero Header */
+        header {
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 20px;
+            border: 1px solid var(--border-color);
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+
+        .tag {
+            display: inline-block;
+            background: rgba(244, 63, 94, 0.1);
+            color: var(--accent-color);
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        h1 {
+            font-size: 2.8rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            background: linear-gradient(135deg, #ffffff 0%, #cbd5e1 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .contact-links {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-top: 15px;
+            font-size: 0.95rem;
+            color: var(--text-muted);
+        }
+
+        .contact-links a {
+            color: var(--accent-color);
+            text-decoration: none;
+            font-weight: 600;
+            transition: opacity 0.2s;
+        }
+
+        .contact-links a:hover {
+            opacity: 0.8;
+        }
+
+        /* Section Styling */
+        section {
+            background: var(--card-bg);
+            padding: 35px;
+            border-radius: 20px;
+            border: 1px solid var(--border-color);
+            margin-bottom: 25px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+        }
+
+        h2 {
+            font-size: 1.3rem;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: var(--accent-color);
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        h2::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: var(--border-color);
+        }
+
+        p {
+            color: var(--text-muted);
+            font-size: 1rem;
+        }
+
+        /* Tables & Lists */
+        .table-responsive {
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+            text-align: left;
+        }
+
+        th {
+            background: #0f172a;
+            color: var(--text-main);
+            padding: 12px;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-bottom: 2px solid var(--border-color);
+        }
+
+        td {
+            padding: 14px 12px;
+            border-bottom: 1px solid var(--border-color);
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        li {
+            position: relative;
+            padding-left: 25px;
+            margin-bottom: 15px;
+            color: var(--text-muted);
+        }
+
+        li::before {
+            content: '✦';
+            position: absolute;
+            left: 0;
+            color: var(--accent-color);
+        }
+
+        li strong {
+            color: var(--text-main);
+        }
+
+        /* Grid for Skills */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .skill-card {
+            background: #0f172a;
+            padding: 20px;
+            border-radius: 12px;
+            border: 1px solid var(--border-color);
+        }
+
+        .skill-card h3 {
+            color: var(--text-main);
+            font-size: 1rem;
+            margin-bottom: 8px;
+        }
+
+        .skill-card p {
+            font-size: 0.9rem;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Hero Header -->
+        <header>
+            <span class="tag">Marketing & Content Creator</span>
+            <h1>AACHAL WANI</h1>
+            <p>Driven Marketing Professional and Brand Content Creator specializing in the Food & Beverage (F&B) and Hospitality sectors. Combines data-driven market research, consumer behavior insights, and compelling digital storytelling to execute high-impact promotional campaigns.</p>
+            <div class="contact-links">
+                <span>✉️ achalwani04@gmail.com</span>
+                <span>📍 Pune, Maharashtra</span>
+                <a href="https://linkedin.com/in/AachalWani" target="_blank">🔗 linkedin.com/in/AachalWani</a>
+            </div>
+        </header>
+
+        <!-- Career Profile -->
+        <section>
+            <h2>Career Profile</h2>
+            <p>Proven track record of strategic brand collaborations that boost consumer engagement and brand visibility.</p>
+        </section>
+
+        <!-- Education -->
+        <section>
+            <h2>Education</h2>
+            <div class="table-responsive">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Qualification</th>
+                            <th>Institution</th>
+                            <th>Board / University</th>
+                            <th>Year</th>
+                            <th>Score / CGPA</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>BBA (Marketing)</strong></td>
+                            <td>Brihan Maharashtra College of Commerce (BMCC)</td>
+                            <td>Savitribai Phule Pune University</td>
+                            <td>2022 – 2025</td>
+                            <td>7.73 CGPA</td>
+                        </tr>
+                        <tr>
+                            <td><strong>HSC (Class XII)</strong></td>
+                            <td>Swami Vivekanand College, Washim</td>
+                            <td>Maharashtra State Board</td>
+                            <td>2022</td>
+                            <td>93.50%</td>
+                        </tr>
+                        <tr>
+                            <td><strong>CBSE (Class X)</strong></td>
+                            <td>Happy Faces The Concept School, Washim</td>
+                            <td>CBSE Board</td>
+                            <td>2020</td>
+                            <td>88.00%</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Brand Collaborations & Projects -->
+        <section>
+            <h2>Brand Collaborations & Marketing Projects</h2>
+            <ul>
+                <li>
+                    <strong>Content Creator & Brand Collaborator — F&B, Hospitality & Lifestyle (2023 – Present):</strong>
+                    <br>
+                    <strong>Strategic Brand Partnerships:</strong> Conceptualized and produced engaging visual content in collaboration with prominent premium hospitality and retail brands, including Hyatt, Sheraton Grand, Bastian Hospitality, Broadway, and IKEA.
+                </li>
+                <li>
+                    <strong>Audience Engagement & Growth:</strong> Translated consumer preference insights into high-performing short-form video campaigns, boosting digital touchpoints and brand interaction metrics across targeted demographics.
+                </li>
+                <li>
+                    <strong>End-to-End Campaign Strategy:</strong> Managed full campaign lifecycles from initial outreach, visual storytelling, and content scripting to final delivery and performance tracking.
+                </li>
+            </ul>
+        </section>
+
+        <!-- Positions of Responsibility -->
+        <section>
+            <h2>Positions of Responsibility & Leadership</h2>
+            <ul>
+                <li>
+                    <strong>Event Coordinator & Volunteer — 'Troika' Annual College Fest:</strong> Successfully managed event operations and co-led the Quiz Competition execution, directing logistics for over 200+ participants.
+                </li>
+            </ul>
+        </section>
+
+        <!-- Key Achievements -->
+        <section>
+            <h2>Key Achievements</h2>
+            <ul>
+                <li>
+                    <strong>Sports Excellence:</strong> Represented district in competitive Badminton at the District Level, demonstrating strong discipline, focus, and endurance under high-pressure competitive environments.
+                </li>
+            </ul>
+        </section>
+
+        <!-- Skills & Competencies -->
+        <section>
+            <h2>Skills & Competencies</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>Functional Skills</h3>
+                    <p>Brand Strategy & Marketing, Digital Content Creation, Consumer Insights, F&B Campaign Management, Market Research</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Technical / Digital</h3>
+                    <p>MS Office (Excel, Word, PowerPoint), Canva, Social Media Analytics, Visual Editing Tools</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Behavioural Skills</h3>
+                    <p>Cross-functional Teamwork, Strategic Problem Solving, Time Management, Creative Communication</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications -->
+        <section>
+            <h2>Certifications</h2>
+            <ul>
+                <li>Tally Accounting & Financial Management Certification</li>
+            </ul>
+        </section>
+
+        <!-- Languages -->
+        <section>
+            <h2>Languages</h2>
+            <p><strong>English, Hindi, Marathi</strong> (Fluent) | <strong>French</strong> (Basic)</p>
+        </section>
+
+        <footer>
+            <p>© 2026 Aachal Wani | Hosted on Vercel</p>
+        </footer>
+    </div>
+</body>
+</html>
